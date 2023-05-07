@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>424379453738-80329eufrqrtqr765a1i82fno8aguoen.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.424379453738-80329eufrqrtqr765a1i82fno8aguoen</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDDdb6O68N-pa4Uyc6CUzsZRbHuttu04yE</string>
+	<key>GCM_SENDER_ID</key>
+	<string>424379453738</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.example.attendancesystem</string>
+	<key>PROJECT_ID</key>
+	<string>facerecognition-cc926</string>
+	<key>STORAGE_BUCKET</key>
+	<string>facerecognition-cc926.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:424379453738:ios:100a7b22b8fe2f3a910e53</string>
+</dict>
+</plist>

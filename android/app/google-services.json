@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "424379453738",
+    "project_id": "facerecognition-cc926",
+    "storage_bucket": "facerecognition-cc926.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:424379453738:android:47a0fa8022f772e6910e53",
+        "android_client_info": {
+          "package_name": "com.example.attendancesystem"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "424379453738-3g0ggmbetpgcl6bbn5981ofbbqf13d6l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDh3ttokF7280H65DTA7_AWX6enVm1qrNU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "424379453738-3g0ggmbetpgcl6bbn5981ofbbqf13d6l.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
