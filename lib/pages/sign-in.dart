@@ -31,15 +31,14 @@ class SignInState extends State<SignIn> {
   bool _isPictureTaken = false;
   bool _isInitializing = false;
   bool inCollege(User user) {
-    // double x1 = 30.26621033215036,
-    //     y1 = 77.9901135901542,
-    //     x2 = 30.27215150668715,
-    //     y2 = 77.9967531714394;
-    // print("My location " + user.lat.toString() + " " + user.long.toString());
-    // if (x1 < user.lat && user.lat < x2 && y1 < user.long && user.long < y2)
-    //   return true;
-    // return false;
-    return true;
+    double x1 = 30.26621033215036,
+        y1 = 77.9901135901542,
+        x2 = 30.27215150668715,
+        y2 = 77.9967531714394;
+    print("My location " + user.lat.toString() + " " + user.long.toString());
+    if (x1 < user.lat && user.lat < x2 && y1 < user.long && user.long < y2)
+      return true;
+    return false;
   }
 
   void _startLocationService(User user) async {

@@ -11,7 +11,6 @@ class TodayScreen extends StatefulWidget {
   const TodayScreen({Key? key, required this.user}) : super(key: key);
   final User user;
   @override
-  // ignore: library_private_types_in_public_api
   _TodayScreenState createState() => _TodayScreenState();
 }
 

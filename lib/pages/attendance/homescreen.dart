@@ -7,8 +7,6 @@ import './todayscreen.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import './calendarscreen.dart';
 import './profilescreen.dart';
-// import './model/user.dart' as u;
-// import '../../../loginscreen.dart';
 
 class HomeScreen extends StatefulWidget {
   HomeScreen({Key? key, required this.user}) : super(key: key);
@@ -18,12 +16,6 @@ class HomeScreen extends StatefulWidget {
 }
 
 class _HomeScreenState extends State<HomeScreen> {
-  //final FirebaseAuth auth = FirebaseAuth.instance;
-  //signout function
-  // signOut() async {
-  //   Navigator.of(context).popAndPushNamed(LoginScreen.routeName);
-  // }
-
   double screenHeight = 0;
   double screenWidth = 0;
 
@@ -77,16 +69,6 @@ class _HomeScreenState extends State<HomeScreen> {
     screenHeight = MediaQuery.of(context).size.height;
     screenWidth = MediaQuery.of(context).size.width;
     return Scaffold(
-      // //floating Action Button using for signout ,
-
-      // floatingActionButton: FloatingActionButton(
-      //   onPressed: () {
-      //     signOut();
-      //   },
-      //   backgroundColor: const Color.fromARGB(253, 105, 68, 239),
-      //   child: const Icon(Icons.logout_rounded),
-      // ),
-
       body: IndexedStack(index: currentIndex, children: [
         CalendarScreen(user: widget.user),
         TodayScreen(user: widget.user),
@@ -94,7 +76,6 @@ class _HomeScreenState extends State<HomeScreen> {
         const MyHomePage(),
       ]),
       bottomNavigationBar: Container(
-        // inko github pe upload krte raho
         height: 70,
         margin: const EdgeInsets.only(
           left: 12,

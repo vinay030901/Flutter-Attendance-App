@@ -21,24 +21,13 @@ class FaceDetectorService {
         performanceMode: FaceDetectorMode.accurate,
       ),
     );
-
-    // _faceDetector = FaceDetector(
-    //     options: FaceDetectorOptions(
-    //         performanceMode: FaceDetectorMode.fast,
-    //         enableContours: true,
-    //         enableClassification: true));
   }
 
   Future<void> detectFacesFromImage(CameraImage image) async {
     InputImageData _firebaseImageMetadata = InputImageData(
       imageRotation:
           _cameraService.cameraRotation ?? InputImageRotation.rotation0deg,
-
-      // inputImageFormat: InputImageFormat.yuv_420_888,
-
-      inputImageFormat: InputImageFormatValue.fromRawValue(image.format.raw)
-          // InputImageFormatMethods.fromRawValue(image.format.raw) for new version
-          ??
+      inputImageFormat: InputImageFormatValue.fromRawValue(image.format.raw) ??
           InputImageFormat.yuv_420_888,
       size: Size(image.width.toDouble(), image.height.toDouble()),
       planeData: image.planes.map(
@@ -60,12 +49,9 @@ class FaceDetectorService {
     final bytes = allBytes.done().buffer.asUint8List();
 
     InputImage _firebaseVisionImage = InputImage.fromBytes(
-      // bytes: image.planes[0].bytes,
       bytes: bytes,
       inputImageData: _firebaseImageMetadata,
     );
-    // for mlkit 13
-
     _faces = await _faceDetector.processImage(_firebaseVisionImage);
   }
 

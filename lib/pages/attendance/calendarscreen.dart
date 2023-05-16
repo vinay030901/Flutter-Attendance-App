@@ -2,7 +2,6 @@ import 'package:attendancesystem/pages/models/user.model.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
-// import 'package:month_year_picker/month_year_picker.dart';
 import 'package:month_picker_dialog/month_picker_dialog.dart';
 
 class CalendarScreen extends StatefulWidget {
@@ -86,46 +85,6 @@ class _CalendarScreenState extends State<CalendarScreen> {
                           _month = DateFormat('MMMM').format(month as DateTime);
                         });
                       });
-                      // .then((date) {
-                      //   // if (date != null) {
-                      //   //   setState(() {
-                      //   //     selectedDate = date;
-                      //   //   });
-                      //   // }
-                      // });
-                      // final month = showMonthYearPicker(
-                      //     context: context,
-                      //     initialDate: DateTime.now(),
-                      //     firstDate: DateTime(2022),
-                      //     lastDate: DateTime(2099),
-                      //     builder: (context, child) {
-                      //       return Theme(
-                      //         data: Theme.of(context).copyWith(
-                      //           colorScheme: ColorScheme.light(
-                      //             primary: primary,
-                      //             secondary: primary,
-                      //             onSecondary: Colors.white,
-                      //           ),
-                      //           textButtonTheme: TextButtonThemeData(
-                      //             style: TextButton.styleFrom(
-                      //               foregroundColor: primary,
-                      //             ),
-                      //           ),
-                      //           textTheme: const TextTheme(
-                      //             headlineMedium: TextStyle(
-                      //               fontFamily: "NexaBold",
-                      //             ),
-                      //             labelSmall: TextStyle(
-                      //               fontFamily: "NexaBold",
-                      //             ),
-                      //             labelLarge: TextStyle(
-                      //               fontFamily: "NexaBold",
-                      //             ),
-                      //           ),
-                      //         ),
-                      //         child: child!,
-                      //       );
-                      //     });
                     },
                     child: Text(
                       "Pick a Month",
